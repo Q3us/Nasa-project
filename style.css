@@ -1,0 +1,133 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #232227;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: -8px;
+    width: 100vw;
+    height: 75px;
+    background-color: #373838;
+    position: absolute;
+}
+.header h2{
+    font-size: 40px;
+    margin: 0 15px;
+    color: #dcdcedce;
+}
+.elements{
+    display: flex;
+    flex-direction: row;
+    color: #dcdced59;
+    margin-left: 50px;
+}
+.elements h3{
+    font-size: 22px;
+    margin: 0 25px;
+}
+.elements h3:hover{
+    color: #DCDCED;
+}
+.elements h3:active{
+    color: #7073ff;
+}
+.search{
+    padding: 7px 50px;
+    margin-left: px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 1px 1px 15px rgb(139, 139, 139);
+}
+.sign{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(187, 187, 187);
+    margin-left: 50px;
+    font-size: 20px;
+}
+.signin{
+    border: 1px solid #7073ff;
+    background-color: #7073ff;
+    border-radius: 10px;
+    padding: 7px;
+}
+.signup{
+    margin-left: 50px;
+}
+.signup:hover{
+    color: white;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.775);
+}
+.signin:hover {
+    animation-name: in;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+} 
+@keyframes in {
+    0%{
+        
+    }
+    100%{
+        color: #ffffff;
+        box-shadow: 0px 0px 20px #7072ff;
+        border: 1px #7073ff;
+        border-radius: 10px;
+        background-color: #7072ff;
+    }
+}
+.livelines{
+    display: flex;
+    flex-direction: row;
+}
+.liveline{
+    position: relative;
+    width: 300px;
+    height: 5px;
+    background: #39a2beb1;
+    transform: rotate(-35deg);
+    animation: liveline 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: -1;
+    margin: 0 -140px;
+}
+@keyframes liveline{
+    0%{
+        left: -220px;
+        top: 500px;
+    }
+    100%{
+        top: -200px;
+        left: 100vh;
+    }
+}
+.title{
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 35px;
+    color: #b2c4ffe0;
+    max-width: 600px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 25px #b2c4ffab;
+    animation-name: title;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+@keyframes title {
+    0%{
+        text-shadow: 5px 5px 15px #b2c4ff7c;
+    }
+    100%{
+        text-shadow: 5px 5px 100px #b2c4ff80;
+    }
+}
+.rocket{
+    filter: contrast(grey);
+}
